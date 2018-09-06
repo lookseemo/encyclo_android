@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:LineGraph="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_rating_color"
+                tools:context="com.deedsit.android.bookworm.ui.mainactivityfragments.StudentRatingFragment">
+
+    <LinearLayout
+        android:id="@+id/graph_legends_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/background_rating_color"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/class_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+
+            android:background="@color/login_background"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="LIVE"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/duration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="--:--"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_thumbp_up"
+            />
+
+        <TextView
+            android:id="@+id/liked_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:text="------"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/ic_thump_down"
+            />
+
+        <TextView
+            android:id="@+id/disliked_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:text="------"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/div_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/graph_legends_layout"
+        android:src="@drawable/background_border_line"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_layout"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageButton
+            android:id="@+id/disliked_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dislike_rating_btn"
+            android:backgroundTint="@color/neg_line_fill"
+            android:src="@drawable/ic_thump_down"
+            />
+        <ImageButton
+            android:id="@+id/liked_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dislike_rating_btn"
+            android:backgroundTint="@color/pos_line_fill_90"
+            android:src="@drawable/ic_thumbp_up"
+            />
+    </LinearLayout>
+
+    <learn.self.aus.com.graphchartmodule.LineGraph
+        android:id="@+id/graph_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_layout"
+        android:layout_below="@id/div_line"
+        LineGraph:background_graph_color="@color/background_rating_color"
+        LineGraph:negative_line_color="@color/neg_line_stroke_colour"
+        LineGraph:negative_under_line_color="@color/neg_line_fill"
+        LineGraph:positive_line_color="@color/pos_line_stroke_colour"
+        LineGraph:positive_under_line_color="@color/pos_line_fill_90"
+        />
+
+    <TextView
+        android:id="@+id/paused_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_black_trans"
+        android:gravity="center"
+        android:text="@string/break_time_label"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/paused_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/class_will_resume_soon_label"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:weightSum="3"
+              android:background="#ffffff"
+              tools:context="com.deedsit.android.bookworm.ui.mainactivityfragments.HomeFragmentLecturer">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/total_number_courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/secondary_text"
+                android:padding="15dp"
+                android:text="2 courses"
+                android:textColor="@android:color/black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_main_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/total_number_courses"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_courses_label"
+                android:id="@+id/no_courses_tv"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="60dp"
+                android:textSize="@dimen/label_dimen"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_floating_button_add"
+            app:backgroundTint="@color/colorAccent"
+            app:layout_anchorGravity="bottom|end"
+            app:rippleColor="@color/colorPrimaryDark"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

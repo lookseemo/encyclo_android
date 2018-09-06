@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#ff6f00</color>
+    <color name="loginButtonColour">#FFFE5620</color>
+    <color name="errorRedText">#FF00</color>
+    <color name="secondary_text">#dddddd</color>
+    <color name="icons">#212121</color>
+    <color name="background_color_login">#D9000000</color>
+    <color name="background_black_trans">#90000000</color>
+    <color name="background_rating_color">#FF263238</color>
+    <color name="background_student_row">#FF1E282D</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="login_background">#24ae20</color>
+    <color name="registration_background">#F7F3E1</color>
+    <color name="register_button">#AD6BEA</color>
+    <color name="login_button">#04D5F9</color>
+    <color name="light_grey_color">#72767C</color>
+    <color name="ic_unselected_color">#FF919191</color>
+    <color name="ic_selected_color">#FF01897B</color>
+
+</resources>

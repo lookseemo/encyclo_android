@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/course_view_row"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Beginner Android Developer (2 classes)"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            >
+            <TextView
+                android:id="@+id/course_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD01"
+                android:textSize="12sp"
+
+                />
+            <TextView
+                android:id="@+id/class_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@color/login_background"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="LIVE"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                android:textSize="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:id="@+id/arrow_ic"/>
+</LinearLayout>

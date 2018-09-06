@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/label_dimen"
+            android:textColor="#009688"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textStyle="bold"
+            android:text="@string/new_class_dialog_title"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/close_ic"
+            />
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/class_title_input_layout"
+        android:paddingBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:paddingEnd="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/class_title_input"
+            android:hint="@string/class_name_label"
+            android:paddingStart="10dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_class_now_btn_label"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textStyle="bold"
+            android:id="@+id/start_class_button"
+            android:textColor="@android:color/white"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/date_ic"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/lecture_input_layout"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:src="@drawable/ic_calendar"-->
+    <!--/>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/date_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/lecture_input_layout"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_toEndOf="@id/date_ic"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Date"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="@dimen/activity_horizontal_margin"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/date_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Please Specify"-->
+    <!--android:textSize="10dp"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/time_ic"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/date_ic"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:src="@drawable/ic_time"-->
+    <!--/>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/start_time_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/date_layout"-->
+    <!--android:layout_marginStart="10dp"-->
+    <!--android:layout_marginTop="17dp"-->
+    <!--android:layout_toEndOf="@id/time_ic"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Start Time"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="@dimen/activity_horizontal_margin"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/start_time_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Please Specify"-->
+    <!--android:textSize="10dp"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/end_time_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/date_layout"-->
+    <!--android:layout_marginStart="45dp"-->
+    <!--android:layout_marginTop="17dp"-->
+    <!--android:layout_toEndOf="@id/start_time_layout"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="End Time"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="@dimen/activity_horizontal_margin"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/end_time_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Please Specify"-->
+    <!--android:textSize="10dp"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/submit_button"-->
+    <!--android:layout_alignBottom="@+id/date_ic"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:layout_marginStart="15dp"-->
+    <!--android:layout_toEndOf="@+id/end_time_layout"-->
+    <!--android:src="@drawable/ic_navigation_check_24"-->
+    <!--app:backgroundTint="@color/colorAccent"-->
+    <!--app:rippleColor="@color/colorPrimaryDark"/>-->

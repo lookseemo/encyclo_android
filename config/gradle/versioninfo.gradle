@@ -1,0 +1,39 @@
+ext {
+    GetVersionName = {
+        String defaultVersionName = '1.0.0'
+
+        if (System.env.BUILD_APP_VERSIONNAME != null) {
+            return System.env.BUILD_APP_VERSIONNAME as String
+        } else {
+            return defaultVersionName
+        }
+    }
+
+    // Work out the versionCode from the versionName.
+    // If the environment variable is defined it will be used.
+    GetVersionCode = {
+        if (System.env.BUILD_APP_VERSIONCODE != null) {
+            return System.env.BUILD_APP_VERSIONCODE as Integer
+        } else {
+            def version = GetVersionName() + "-SNAPSHOT"
+            def candidate = "99"
+            def (major, minor, patch) = version.toLowerCase().replaceAll('-', '').tokenize('.')
+            if (patch.endsWith("snapshot")) {
+                candidate = "0"
+                patch = patch.replaceAll("[^0-9]", "")
+            } else {
+                def rc
+                (patch, rc) = patch.tokenize("rc")
+                if (rc) {
+                    candidate = rc
+                }
+            }
+
+            (major, minor, patch, candidate) = [major, minor, patch, candidate].collect {
+                it.toInteger()
+            }
+            (major * 100000000) + (minor * 1000000) + (patch * 100) + candidate;
+        }
+    }
+
+}

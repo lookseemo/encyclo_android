@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LineGraph">
+        <attr name="grid_line_width" format="integer"/>
+        <attr name="line_width" format="integer"/>
+        <attr name="text_colour" format="color" />
+        <attr name="grid_line_color" format="color"/>
+        <attr name="positive_line_color" format="color"/>
+        <attr name="negative_line_color" format="color"/>
+        <attr name="positive_under_line_color" format="color"/>
+        <attr name="negative_under_line_color" format="color"/>
+        <attr name="background_graph_color" format="color"/>
+        <attr name="nagative_chart" format="boolean"/>
+    </declare-styleable>
+</resources>

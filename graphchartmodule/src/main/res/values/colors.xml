@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pos_line_fill_30">#3095F1C5</color>
+    <color name="pos_line_fill_10">#1095F1C5</color>
+    <color name="pos_line_fill_75">#7595F1C5</color>
+    <color name="pos_line_fill_90">#9995F1C5</color>
+    <color name="pos_line_stroke_colour">#FF95F1C5</color>
+    <color name="neg_line_stroke_colour">#FFFF704B</color>
+    <color name="neg_line_fill">#70FF704B</color>
+    <color name="neg_line_fill_85">#98FF704B</color>
+    <color name="neg_line_fill_65">#65FF704B</color>
+    <color name="background_rating_color">#FF263238</color>
+    <color name="grid_line_colour">#FF898989</color>
+</resources>

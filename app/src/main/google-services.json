@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "1031239185412",
+    "firebase_url": "https://bookwom-a3033.firebaseio.com",
+    "project_id": "bookwom-a3033",
+    "storage_bucket": "bookwom-a3033.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031239185412:android:8f6f20fa1566e72e",
+        "android_client_info": {
+          "package_name": "com.deedsit.android.bookworm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031239185412-81mm0caib8m4lnvfb5oa5o5vk47msckt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deedsit.android.bookworm",
+            "certificate_hash": "6390054917446cde4f83b5386e2c6a37d3657b42"
+          }
+        },
+        {
+          "client_id": "1031239185412-i0p2r17j464grks4qhd7fucuf9kerlgi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcxI_YkwTanJyGXfX-0U_2qHxdAeBAB8M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031239185412-i0p2r17j464grks4qhd7fucuf9kerlgi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1031239185412-474qaeu3mgaj5agfcev69e33aoju6vo2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deedsit.bookworm"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

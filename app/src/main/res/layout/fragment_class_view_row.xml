@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/class_info_layout"
+        android:layout_weight="2"
+        >
+
+        <TextView
+            android:id="@+id/class_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="Android Development - Tutorial"
+            android:textSize="@dimen/label_dimen"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/class_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/class_title"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:text="10:00 AM - 11:30 AM"
+            />
+
+        <TextView
+            android:id="@+id/class_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/class_title"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/class_time"
+            android:background="@color/login_background"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="LIVE"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rating_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="90%"
+        android:textSize="@dimen/rating_info_label"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

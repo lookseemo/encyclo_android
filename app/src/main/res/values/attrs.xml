@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="line_chart">
+        <attr name="layout_width" format="integer"/>
+        <attr name="layout_height" format="integer"/>
+        <attr name="backgroundColor" format="color"/>
+
+    </declare-styleable>
+</resources>

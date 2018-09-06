@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/side_nav_bar"
+        android:orientation="vertical"
+        android:id="@+id/title_bar"
+        >
+
+        <TextView
+            android:id="@+id/title_rating_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:text="This Is Title"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/sup_title_rating_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:text="This is supp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+    <com.deedsit.android.bookworm.ui.google.SlidingTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/side_nav_bar"
+        android:layout_below="@id/title_bar"
+        >
+
+    </com.deedsit.android.bookworm.ui.google.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/rating_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_paused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="30dp"
+        app:backgroundTint="@color/loginButtonColour"
+        android:src="@drawable/ic_pause_fab"
+        />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Bookworm</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_login">Log in</string>
+    <string name="menu_logout">Log out</string>
+    <string name="login_label">Log In</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="send_text">Send</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec condimentum ante, quis mattis mi. Proin ut rhoncus libero, ac euismod neque. Ut suscipit, enim a facilisis consequat, orci lacus venenatis orci, at ultricies orci nulla sed ex. In condimentum viverra velit, eget feugiat libero imperdiet vel. Aenean pretium, lectus vitae bibendum bibendum, diam turpis convallis eros, quis tristique leo sapien at ipsum. Praesent eu odio id nulla lobortis auctor. Donec eget dolor eget nisl euismod commodo vel a lacus. Quisque ut justo vitae urna pharetra accumsan. Etiam dignissim neque iaculis mauris viverra, blandit rhoncus odio porttitor. Phasellus nibh arcu.</string>
+    <string name="title_sign_in">Welcome</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hint_password">password</string>
+    <string name="hint_email">email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="heading_recent">Recent</string>
+    <string name="heading_my_posts">My Posts</string>
+    <string name="heading_my_top_posts">My Top Posts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="no_lecture_text">No Lectures Have Been Added Yet</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="course_code_missing_error_text">Please Enter Course Code</string>
+    <string name="course_name_missing_error_text">Please Enter Course Name</string>
+    <string name="dialog_cancel_button_text">Cancel</string>
+    <string name="dialog_add_button_text">Add</string>
+    <string name="create_course_label">Create New Course</string>
+    <string name="course_name_input_hint">Course Name (optional)</string>
+    <string name="course_code_label">Unique Course Code*</string>
+    <string name="generate_btn_label">Generate</string>
+    <string name="create_course_btn_label">Create Course</string>
+    <string name="class_name_label">Class Name*</string>
+    <string name="new_class_dialog_title">New Class</string>
+    <string name="start_class_now_btn_label">START CLASS NOW</string>
+    <string name="class_status_live_text">LIVE</string>
+    <string name="class_status_pause_text">PAUSED</string>
+    <string name="class_status_ended_text">ENDED</string>
+    <string name="no_courses_label">No Courses Have Been Added Yet</string>
+    <string name="cant_create_class_err_dialog_title">Cant Create New Class now</string>
+    <string name="create_class_err_message">Only one class can be run at a time. Please end the Live class to start new class.</string>
+    <string name="enter_course_name_error">Please Enter Course Name First</string>
+    <string name="add_course">Add Course</string>
+    <string name="cannot_create_course_title">Cannot Create Course</string>
+    <string name="cannot_create_course_err_message">Cannot create course as one of the courses is live!</string>
+    <string name="empty_string"> </string>
+    <string name="email_address_label">Email Address</string>
+    <string name="log_in_label">Log In</string>
+    <string name="forgot_pwd_label">Forgot Password?</string>
+    <string name="create_account_label">Don\'t have account? Create Now</string>
+    <string name="register_label">Register</string>
+    <string name="my_courses_nav">My Courses</string>
+    <string name="end_class_btn_label">End Class</string>
+    <string name="end_class_al_title">End Class</string>
+    <string name="end_class_al_msg">Would you like to end class now?</string>
+    <string name="ok_btn_label">OK</string>
+    <string name="no_class_live_msg">There is currently no live class from this course, please try again</string>
+    <string name="no_class_live_title">No Class is Live</string>
+    <string name="break_time_label">BREAK TIME</string>
+    <string name="class_will_resume_soon_label">Class will resume soon</string>
+    <string name="end_class_now_dialog">End Class Now</string>
+    <string name="cancel_dialog_label">Cancel</string>
+    <string name="no_classes_label">No Classes Have Been Added Yet</string>
+    <string name="class_ended_msg_dialog_student">Class had ended! Thank you for your participation.</string>
+</resources>
